@@ -1,4 +1,65 @@
 html {
   background: #f2f1f4;
   color: #19171c;
+  box-sizing: border-box;
 }
+
+.articles {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 25%;
+  margin: 20px;
+}
+
+/*
+h2 {
+  background-color: white;
+  display: inline-block;
+}
+
+p {
+  background-color: white;
+  display: inline-block;
+}
+*/
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+@media screen (min-width: 600px) and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .column {
+        width: 25%;
+
+/*
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 20px;
+  grid-gap: 20px;
+}
+.grid-item {
+  background: pink;
+  padding: 20px;
+  position: relative;
+  float: left;
+}
+/*.grid-item img {
+  position: absolute;
+  clip: rect(0px, 20px, 0px, 20px);
+}
+.text-box {
+  color: black;
+  background-color: white;
+}*/
