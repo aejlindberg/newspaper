@@ -1,23 +1,94 @@
-html {
-  background: #f2f1f4;
-  color: #19171c;
+* {
   box-sizing: border-box;
 }
 
+html {
+  color: #19171c;
+}
+
+body {
+  background-image: url(https://unsplash.com/photos/RpC-9e0ORNM);
+}
+
 .articles {
+  width: 100%;
+}
+
+h1 {
+  font-family: helvetica;
+  color: #fff;
+  text-align: center;
+}
+
+
+.container {
+  overflow: auto;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.container .box {
+  float: left;
+  position: relative;
+  width: 33.33%;
+  }
+
+.container .box img {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.title {
+  font-family: inherit;
+  color: black;
+  line-height: 0.2;
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  opacity: 0.8;
+  padding: 5px;
+  bottom: 25px;
+  left: 2px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 12px;
+  color: purple;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .container .box {
+        width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+    .container .box {
+        width: 100%;
+    }
+  }
+/*.articles {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .column {
+  display: block;
+  background: pink;
   position: relative;
   float: left;
   width: 25%;
-  margin: 20px;
+  margin: 10px;
 }
 
-/*
 h2 {
   background-color: white;
   display: inline-block;
@@ -27,39 +98,20 @@ p {
   background-color: white;
   display: inline-block;
 }
-*/
-@media screen and (max-width: 600px) {
+
+@media (max-width: 600px) {
     .column {
         width: 100%;
+        background: green;
     }
 }
-@media screen (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 600px) and (max-width: 900px) {
     .column {
-        width: 50%;
+        width: 50%%;
+        background: blue;
     }
 }
-@media screen and (min-width: 900px) {
+@media (min-width: 900px) {
     .column {
         width: 25%;
-
-/*
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 20px;
-  grid-gap: 20px;
-}
-.grid-item {
-  background: pink;
-  padding: 20px;
-  position: relative;
-  float: left;
-}
-/*.grid-item img {
-  position: absolute;
-  clip: rect(0px, 20px, 0px, 20px);
-}
-.text-box {
-  color: black;
-  background-color: white;
-}*/
+        background: yellow;*/
