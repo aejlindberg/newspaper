@@ -4,22 +4,26 @@
 
 html {
   color: #19171c;
+  background-color: #49155c;
 }
 
-body {
-  background-image: url(https://unsplash.com/photos/RpC-9e0ORNM);
+.header {
+  background-color: lavender;
+  padding-bottom: 3px;
+  padding-top: 2px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #000;
+  text-align: center;
+  font-size: 45px;
 }
 
 .articles {
   width: 100%;
+  margin-top: 30px;
 }
-
-h1 {
-  font-family: helvetica;
-  color: #fff;
-  text-align: center;
-}
-
 
 .container {
   overflow: auto;
@@ -44,34 +48,45 @@ h1 {
 .title {
   font-family: inherit;
   color: black;
-  line-height: 0.2;
+  margin: 0;
   position: absolute;
   display: inline-block;
-  background-color: white;
   opacity: 0.8;
   padding: 5px;
-  bottom: 25px;
+  bottom: 15px;
   left: 2px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 24px;
+  display: inline;
+  padding: 3px;
+  background-color: lavender;
 }
 
 h3 {
-  font-size: 12px;
-  color: purple;
+  font-size: 15px;
+  color: #49155c;
+  background-color: lavender;
+  margin: 0px;
+  padding: 3px;
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
     .container .box {
         width: 50%;
   }
+    html {
+      background-color: pink;
+    }
 }
 
 @media (max-width: 600px) {
     .container .box {
         width: 100%;
+    }
+    html {
+      background-color: #f9d84d;
     }
   }
 /*.articles {
